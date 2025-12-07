@@ -1,0 +1,202 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* Cyberpunk Purple & Blue Theme for Physical AI */
+:root {
+  --ifm-color-primary: #6200ea;
+  --ifm-color-primary-dark: #5500d9;
+  --ifm-color-primary-darker: #4d00cc;
+  --ifm-color-primary-darkest: #3d00a3;
+  --ifm-color-primary-light: #7c3aed;
+  --ifm-color-primary-lighter: #8b5cf6;
+  --ifm-color-primary-lightest: #a78bfa;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(98, 0, 234, 0.1);
+  
+  /* Cyberpunk Blue accent */
+  --ifm-color-secondary: #00d9ff;
+  --ifm-color-success: #00ff88;
+  --ifm-color-warning: #ffaa00;
+  --ifm-color-danger: #ff0055;
+  
+  /* Dark background for cyberpunk aesthetic */
+  --ifm-background-color: #0a0e27;
+  --ifm-background-surface-color: #1a1f3a;
+  
+  /* TEXT COLORS - Bright and readable */
+  --ifm-font-color-base: #e0e0e0;
+  --ifm-heading-color: #ffffff;
+}
+
+/* Dark mode with darker, moodier cyberpunk aesthetic */
+[data-theme='dark'] {
+  --ifm-color-primary: #7c3aed;
+  --ifm-color-primary-dark: #6d28d9;
+  --ifm-color-primary-darker: #5b21b6;
+  --ifm-color-primary-darkest: #4c1d95;
+  --ifm-color-primary-light: #a78bfa;
+  --ifm-color-primary-lighter: #c4b5fd;
+  --ifm-color-primary-lightest: #ddd6fe;
+  --docusaurus-highlighted-code-line-bg: rgba(124, 58, 237, 0.2);
+  
+  /* Neon cyberpunk colors for dark mode */
+  --ifm-color-secondary: #00ffff;
+  --ifm-color-success: #00ff00;
+  --ifm-color-warning: #ffff00;
+  --ifm-color-danger: #ff0080;
+  
+  /* Very dark background */
+  --ifm-background-color: #05070f;
+  --ifm-background-surface-color: #0f1428;
+  
+  /* TEXT COLORS - Very bright for dark mode */
+  --ifm-font-color-base: #f0f0f0;
+  --ifm-heading-color: #ffffff;
+}
+
+/* Make sure all text is visible */
+body {
+  color: var(--ifm-font-color-base);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--ifm-heading-color);
+}
+
+p, li, td, th {
+  color: var(--ifm-font-color-base);
+}
+
+/* Article/Content area text */
+article {
+  color: #e0e0e0;
+}
+
+[data-theme='dark'] article {
+  color: #f0f0f0;
+}
+
+/* Enhanced hero styling for cyberpunk look */
+.hero.hero--primary {
+  background: linear-gradient(135deg, #0a0e27 0%, #1a0f3a 50%, #05070f 100%);
+  border-bottom: 2px solid #6200ea;
+}
+
+.hero.hero--primary h1,
+.hero.hero--primary p {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .hero.hero--primary {
+  background: linear-gradient(135deg, #05070f 0%, #1a0f3a 50%, #0a0e27 100%);
+  border-bottom: 2px solid #7c3aed;
+}
+
+/* Button styling for cyberpunk aesthetic */
+.button.button--secondary {
+  border: 2px solid #6200ea;
+  color: #6200ea;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.button.button--secondary:hover {
+  background-color: #6200ea;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(98, 0, 234, 0.6);
+  transform: translateY(-2px);
+}
+
+[data-theme='dark'] .button.button--secondary {
+  border: 2px solid #7c3aed;
+  color: #7c3aed;
+}
+
+[data-theme='dark'] .button.button--secondary:hover {
+  background-color: #7c3aed;
+  color: #fff;
+  box-shadow: 0 0 30px rgba(124, 58, 237, 0.8);
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: rgba(10, 14, 39, 0.95);
+  border-bottom: 1px solid #6200ea;
+  backdrop-filter: blur(10px);
+}
+
+.navbar__link {
+  color: #e0e0e0;
+}
+
+[data-theme='dark'] .navbar {
+  background-color: rgba(5, 7, 15, 0.95);
+  border-bottom: 1px solid #7c3aed;
+}
+
+[data-theme='dark'] .navbar__link {
+  color: #f0f0f0;
+}
+
+/* Link styling with cyberpunk accent */
+.navbar__link:hover {
+  color: #00d9ff;
+}
+
+[data-theme='dark'] .navbar__link:hover {
+  color: #00ffff;
+}
+
+/* Code block styling */
+code {
+  background-color: rgba(98, 0, 234, 0.1);
+  color: #7c3aed;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+[data-theme='dark'] code {
+  background-color: rgba(124, 58, 237, 0.2);
+  color: #a78bfa;
+}
+
+/* Footer styling */
+.footer {
+  background-color: #0a0e27;
+  border-top: 1px solid #6200ea;
+}
+
+.footer * {
+  color: #e0e0e0;
+}
+
+[data-theme='dark'] .footer {
+  background-color: #05070f;
+  border-top: 1px solid #7c3aed;
+}
+
+[data-theme='dark'] .footer * {
+  color: #f0f0f0;
+}
+
+/* Links in content */
+a {
+  color: #7c3aed;
+}
+
+a:hover {
+  color: #a78bfa;
+}
+
+[data-theme='dark'] a {
+  color: #a78bfa;
+}
+
+[data-theme='dark'] a:hover {
+  color: #c4b5fd;
+}

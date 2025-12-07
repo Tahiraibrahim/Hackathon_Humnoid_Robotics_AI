@@ -1,0 +1,46 @@
+.navbarUrduButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #228f2d 0%, #1a6e23 100%);
+  color: white;
+  border: none;
+  padding: 0.5rem 0.85rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(34, 143, 45, 0.2);
+  white-space: nowrap;
+}
+
+.navbarUrduButton:hover {
+  background: linear-gradient(135deg, #1a6e23 0%, #145219 100%);
+  box-shadow: 0 4px 10px rgba(34, 143, 45, 0.3);
+  transform: translateY(-1px);
+}
+
+.navbarUrduButton:active {
+  transform: translateY(0);
+}
+
+.navbarUrduButton.active {
+  background: linear-gradient(135deg, #228f2d 0%, #1a6e23 100%);
+}
+
+@media (max-width: 768px) {
+  .navbarUrduButton {
+    padding: 0.5rem 0.65rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* Dark mode support */
+:global(.dark) .navbarUrduButton {
+  box-shadow: 0 2px 6px rgba(34, 143, 45, 0.3);
+}
+
+:global(.dark) .navbarUrduButton:hover {
+  box-shadow: 0 4px 10px rgba(34, 143, 45, 0.5);
+}
