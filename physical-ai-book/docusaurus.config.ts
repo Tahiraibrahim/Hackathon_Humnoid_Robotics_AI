@@ -9,7 +9,7 @@ const config: Config = {
 
   // --- GITHUB DEPLOYMENT SETTINGS (Yahan Sab Theek Kar Diya Hai) ---
   url: 'https://Tahiraibrahim.github.io', // Sahi Link
-  baseUrl: '/Hackathon_Humnoid_Robotics_AI/', // Repository ka Sahi Naam (Case Sensitive)
+  baseUrl: '/', // Repository ka Sahi Naam (Case Sensitive)
   organizationName: 'Tahiraibrahim',
   projectName: 'Hackathon_Humnoid_Robotics_AI',
   deploymentBranch: 'gh-pages', // Ye line Zaroori thi
